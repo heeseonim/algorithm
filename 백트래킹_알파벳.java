@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main_백준_1987_알파벳 {
 	public static int R, C;
 	public static char[][] map;
 	public static boolean[] visitAlpha;
