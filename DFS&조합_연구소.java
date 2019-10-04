@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
-public class Main {
+public class Main_백준_14502_연구소 {
 	static int N, M;
 	static int[][] map;
 	static int[][] copyMap;
