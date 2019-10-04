@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main {
+public class Main_백준_16637_괄호추가하기 {
 	public static int N;
 	public static int[] totCalNum;
 	public static int[] selCalNum;
