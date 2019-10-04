@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main_백준_2630_색종이만들기 {
 	public static int[][] map;
 	public static int blue, white;
 
