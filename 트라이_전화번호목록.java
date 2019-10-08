@@ -42,11 +42,8 @@ public class Main_5052 {
 						node.cnt++; // 원 노드에 자식이 추가됨
 						node.nxt[c - '0'] = new Node(c, 0); // 자식 노드 중 해당 문자노드를 추가
 					}
-					System.out.println("전 : " + c + " " + node.data + " " + node.cnt);
 					node = node.nxt[c - '0']; // 다음 노드를 원 노드로 변경
-					//System.out.println("후 : " + c + " " + node.data + " " + node.cnt);
 				}
-				System.out.println();
 			}
 			res = 0;
 			searchLeaf(root);
