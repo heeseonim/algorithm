@@ -8,7 +8,7 @@ public class Main_1157 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Map<Character, Integer> map = new HashMap<>();
 		String str = br.readLine();
-		str = str.toLowerCase();
+		str = str.toUpperCase();
 		for (int i = 0; i < str.length(); i++) {
 			map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
 		}
@@ -42,6 +42,6 @@ public class Main_1157 {
 			}
 		}
 		
-		System.out.println(Character.toUpperCase(answer));
+		System.out.println(answer);
 	}
 }
