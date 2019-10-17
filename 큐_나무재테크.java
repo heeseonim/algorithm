@@ -10,7 +10,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 import java.util.concurrent.DelayQueue;
 
-public class Main_백준_16235_나무재테크_임희선 {
+public class Main_백준_16235_나무재테크 {
 	public static int[][] map;
 	public static int[][] plus;
 	public static int[][] dir = { { -1, -1 }, { -1, 0 }, { -1, 1 }, { 0, -1 }, { 0, 1 }, { 1, -1 }, { 1, 0 },
