@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main_5052 {
+public class Main_백준_5052_전화번호목록 {
 	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private static String str;
 	private static int i;
