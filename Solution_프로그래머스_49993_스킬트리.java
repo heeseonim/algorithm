@@ -1,4 +1,4 @@
-class Solution {
+class Solution_프로그래머스_49993_스킬트리 {
     public int solution(String skill, String[] skill_trees) {
         int answer = 0;
 		for (int i = 0; i < skill_trees.length; i++) {
