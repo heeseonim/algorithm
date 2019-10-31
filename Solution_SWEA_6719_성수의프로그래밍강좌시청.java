@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Solution_6719_성수의프로그래밍강좌시청 {
+public class Solution_SWEA_6719_성수의프로그래밍강좌시청 {
 	// swea 6719 성수의 프로그래밍 강좌 시청
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
