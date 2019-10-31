@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_6603_로또 {
+public class Main_백준_6603_로또 {
 	static int N;
 	static int[] arr;
 
