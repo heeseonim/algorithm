@@ -1,7 +1,7 @@
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class 힙_라면공장 {
+public class Solution_프로그래머스_42629_라면공장 {
 	public static void main(String[] args) {
 		int stock = 4;
 		int[] dates = {4, 10, 15};

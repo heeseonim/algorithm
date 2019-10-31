@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-public class Solution_7701 {
+public class Solution_SWEA_7701_염라대왕의이름정렬 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());

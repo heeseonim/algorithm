@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class 힙_더맵게 {
+public class Solution_프로그래머스_42626_더맵게 {
 	public int solution(int[] scoville, int K) {
 		int answer = 0;
 		PriorityQueue<Integer> heap = new PriorityQueue<>();

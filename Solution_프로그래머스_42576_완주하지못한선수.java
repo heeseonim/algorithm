@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class 해시_완주하지못한선수 {
+public class Solution_프로그래머스_42576_완주하지못한선수 {
 
 	public static void main(String[] args) {
 		String[] participant = { "leo", "kiki", "eden" };
