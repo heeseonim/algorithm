@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_2382_미생물격리 {
+public class Solution_SWEA_2382_미생물격리 {
 	public static int N, M, K;
 	public static micro[][] map;
 	public static micro[][] copyMap;
