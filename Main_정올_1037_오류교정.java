@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main_1037_오류교정 {
+public class Main_정올_1037_오류교정 {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
