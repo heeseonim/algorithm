@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution_2063_중간값찾기 {
+public class Solution_SWEA_2063_중간값찾기 {
 
 	public static void main(String[] args) {
 		int N;
