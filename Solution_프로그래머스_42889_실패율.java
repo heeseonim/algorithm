@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class KAKAO_실패율 {
+public class Solution_프로그래머스_42889_실패율 {
 	public static void main(String[] args) {
 		int N = 4;
 		int[] stages = { 4, 4, 4, 4, 4 };
