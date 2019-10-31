@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main_1922 {
+public class Main_백준_1922_네트워크연결 {
 	public static int[] p;
 	public static int[] rank;
 
