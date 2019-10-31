@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main_10026_적록색약 {
+public class Main_백준_10026_적록색약 {
 	static int N;
 	static char[][] map;
 	static boolean[][] visited;

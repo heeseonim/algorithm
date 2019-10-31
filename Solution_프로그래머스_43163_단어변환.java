@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Solution {
+class Solution_프로그래머스_43163_단어변환 {
     private class node {
 		String str;
 		int level;

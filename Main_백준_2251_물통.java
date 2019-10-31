@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_2251_물통 {
+public class Main_백준_2251_물통 {
 	public static class water {
 		int a;
 		int b;

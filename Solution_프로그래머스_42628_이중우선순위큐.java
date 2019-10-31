@@ -3,7 +3,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class 힙_이중우선순위큐 {
+public class Solution_프로그래머스_42628_이중우선순위큐 {
 	public static void main(String[] args) {
 		String[] operations = { "I 7", "I 5", "I -5", "D -1" };
 		System.out.println(Arrays.toString(solution(operations)));

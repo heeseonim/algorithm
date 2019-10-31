@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Main_2667_단지번호붙이기 {
+public class Main_백준_2667_단지번호붙이기 {
 	static int N;
 	static int[][] map;
 	static int[][] dir = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };

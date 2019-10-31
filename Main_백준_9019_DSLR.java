@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_9019_DSLR {
+public class Main_백준_9019_DSLR {
 	public static int sNum, eNum;
 	public static boolean[] visited;
 	public static String result;
