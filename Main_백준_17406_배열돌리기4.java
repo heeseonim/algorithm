@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_17406_배열돌리기 {
+public class Main_백준_17406_배열돌리기4 {
 	public static int[][] map;
 	public static int[][] copyMap;
 	public static int[][] rotation;
