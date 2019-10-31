@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_2115_벌꿀채취 {
+public class Solution_SWEA_2115_벌꿀채취 {
 	public static int[][] map;
 	public static boolean[][] visited;
 	public static int N, M, C, result;
