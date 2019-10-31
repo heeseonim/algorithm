@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_1873_상호의배틀필드 {
+public class Solution_SWEA_1873_상호의배틀필드 {
 	public static char[][] map;
 	public static int carI, carJ;
 
