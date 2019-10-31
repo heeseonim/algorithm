@@ -1,4 +1,4 @@
-public class 이분탐색_예산 {
+public class Solution_프로그래머스_43237_예산 {
 	public static void main(String[] args) {
 		int[] budgets = { 120, 110, 140, 150 };
 		int M = 485;
