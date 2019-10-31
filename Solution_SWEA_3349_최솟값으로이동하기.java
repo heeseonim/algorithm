@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Solution_3349_최솟값으로이동하기 {
+public class Solution_SWEA_3349_최솟값으로이동하기 {
 	public static class Point {
 		int x;
 		int y;
