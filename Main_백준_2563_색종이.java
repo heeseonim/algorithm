@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_2563_색종이 {
+public class Main_백준_2563_색종이 {
 
 	public static boolean[][] visit;
 

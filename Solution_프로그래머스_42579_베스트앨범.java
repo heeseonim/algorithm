@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Solution_베스트앨범 {
+public class Solution_프로그래머스_42579_베스트앨범 {
 	public static void main(String[] args) {
 		String[] genres = { "classic", "pop", "classic", "classic", "pop" };
 		int[] plays = { 500, 600, 150, 800, 2500 };

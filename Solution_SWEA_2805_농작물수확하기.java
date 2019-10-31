@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution_2805_농작물수확하기 {
+public class Solution_SWEA_2805_농작물수확하기 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();

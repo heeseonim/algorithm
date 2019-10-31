@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Solution_1954_달팽이숫자 {
+public class Solution_SWEA_1954_달팽이숫자 {
 	static int[][] map;
 
 	public static void main(String[] args) throws NumberFormatException, IOException {

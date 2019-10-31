@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution_5431_민석이의과제체크하기 {
+public class Solution_SWEA_5431_민석이의과제체크하기 {
 
 	public static void main(String[] args) {
 		int T, N, K;
