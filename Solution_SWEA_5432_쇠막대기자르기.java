@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution_5432_쇠막대기자르기 {
+public class Solution_SWEA_5432_쇠막대기자르기 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
