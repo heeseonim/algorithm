@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-public class Solution_5658_보물상자비밀번호 {
+public class Solution_SWEA_5658_보물상자비밀번호 {
 	public static String str;
 	public static TreeSet<Integer> ts;
 	public static int num;

@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-public class Solution_6109_추억의2048게임 {
+public class Solution_SWEA_6109_추억의2048게임 {
 	// swea 6109 추억의2048게임
 	public static int N;
 	public static int[][] map;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution_4796_의석이의우뚝선산 {
+public class Solution_SWEA_4796_의석이의우뚝선산 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();

@@ -1,4 +1,4 @@
-class Solution {
+class Solution_프로그래머스_43162_네트워크 {
     private boolean[] visited;
     
     public int solution(int n, int[][] computers) {

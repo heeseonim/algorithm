@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Solution_1249_보급로 {
+public class Solution_SWEA_1249_보급로 {
 	public static int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
 	public static int[][] map;
 	public static int[][] dist;
