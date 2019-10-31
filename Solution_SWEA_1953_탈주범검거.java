@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Solution_1953_탈주범검거 {
+public class Solution_SWEA_1953_탈주범검거 {
 	public static int[][] map;
 	public static boolean[][] visited;
 	public static int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } }; // 상하좌우
