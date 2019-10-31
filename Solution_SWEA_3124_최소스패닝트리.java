@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution_3124_최소스패닝트리 {
+public class Solution_SWEA_3124_최소스패닝트리 {
 	public static class Edge implements Comparable<Edge> {
 		int a;
 		int b;
