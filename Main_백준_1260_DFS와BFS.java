@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_1260_DFS와BFS {
+public class Main_백준_1260_DFS와BFS {
 	static int N, M, V;
 	static boolean[] visited;
 	static int[][] map;
