@@ -1,4 +1,4 @@
-class Solution {
+class Solution_프로그래머스_43165_타겟넘버 {
     private int count;
     
     public int solution(int[] numbers, int target) {
