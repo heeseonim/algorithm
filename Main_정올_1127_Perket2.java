@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main_1127_2 {
+public class Main_정올_1127_Perket2 {
 	public static int[][] materials;
 	public static int size;
 	public static boolean[] isSelected;
