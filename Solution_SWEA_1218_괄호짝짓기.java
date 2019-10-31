@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution_1218_SW문제해결기본4일차_괄호짝짓기 {
+public class Solution_SWEA_1218_괄호짝짓기 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(src);
