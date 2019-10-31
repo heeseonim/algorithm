@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Solution_1251_하나로 {
+public class Solution_SWEA_1251_하나로 {
 	public static class Edge implements Comparable<Edge> {
 		int a, b;
 		long val;
