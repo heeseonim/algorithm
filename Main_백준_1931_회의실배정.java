@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main_1931_회의실배정 {
+public class Main_백준_1931_회의실배정 {
 	
 	public static class Point implements Comparable<Point> {
 		int s;

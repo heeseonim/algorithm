@@ -1,4 +1,4 @@
-public class 이분탐색_입국심사 {
+public class Solution_3074_입국심사 {
 	public static void main(String[] args) {
 		int n = 1;
 		int[] times = {2, 2};

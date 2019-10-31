@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_1681 {
+public class Main_정올_1681_해밀턴순환회로 {
 	public static boolean[] visited;
 	public static int N;
 	public static int[][] map;
