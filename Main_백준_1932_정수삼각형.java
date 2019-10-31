@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_1932_정수삼각형 {
+public class Main_백준_1932_정수삼각형 {
 	public static int n;
 	public static int[][] map;
 
