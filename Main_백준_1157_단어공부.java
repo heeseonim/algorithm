@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main_1157 {
+public class Main_백준_1157_단어공부 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Map<Character, Integer> map = new HashMap<>();
