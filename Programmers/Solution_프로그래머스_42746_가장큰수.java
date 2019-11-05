@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class 정렬_가장큰수 {
+public class Solution_프로그래머스_42746_가장큰수 {
 	public static void main(String[] args) {
 		int[] numbers = { 6, 10, 2 };
 		System.out.println(solution(numbers));
