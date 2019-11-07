@@ -40,7 +40,7 @@ public class Main_정올_2097_지하철 {
 	}
 
 	public static void dfs(int start, int end, int time, String path) {
-		if (time > min)
+		if (time > min) // 시간이 최소값보다 이미 커져있다면 return
 			return;
 
 		if (end == M - 1) { // 목적지에 왔을 때 시간 체크
