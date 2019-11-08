@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Solution_프로그래머스_1836_리틀프렌즈사천성 {
 	public static void main(String[] args) {
-		String[] brr = { "NRYN", "ARYA" };
-		System.out.println(solution(2, 4, brr));
+		String[] brr = { "AB", "BA" };
+		System.out.println(solution(2, 2, brr));
 	}
 
 	public static int M, N;
@@ -31,13 +31,6 @@ public class Solution_프로그래머스_1836_리틀프렌즈사천성 {
 				list.put(map[i][j], new Point(i, j));
 				visited[map[i][j] - 65] = true;
 			}
-
-		for(char[] a : map) {
-			for(char b : a) {
-				System.out.print(b);
-			}
-			System.out.println();
-		}
 		
 		String answer = "";
 		boolean flag = true;
@@ -46,25 +39,20 @@ public class Solution_프로그래머스_1836_리틀프렌즈사천성 {
 			for (char i = 65; i <= 90; i++) { // 'A'~'Z'
 				if (!visited[i - 65])
 					continue;
-				for(char[] a : map) {
-					for(char b : a) {
-						System.out.print(b);
-					}
-					System.out.println();
-				}
-				System.out.println(i);
 				flag = check(i, list.get(i));
 				if (flag) {
 					answer += i;
+					visited[i-65] = false;
 					break;
 				} else {
 					Point p = list.get(i);
 					map[p.x][p.y] = i;
 				}
 			}
-
-			System.out.println(flag);
 		}
+		
+		for(boolean b : visited)
+			if (b) return "IMPOSSIBLE";
 
 		return answer;
 
@@ -72,7 +60,7 @@ public class Solution_프로그래머스_1836_리틀프렌즈사천성 {
 
 	public static boolean check(char cur, Point p) {
 		map[p.x][p.y] = '.';
-
+		
 		for (int i = 0; i < 4; i++) {
 			int nx = p.x + dir[i][0];
 			int ny = p.y + dir[i][1];
@@ -110,10 +98,11 @@ public class Solution_프로그래머스_1836_리틀프렌즈사천성 {
 					rx += dir[rdir][0];
 					ry += dir[rdir][1];
 				}
-			}
-
-			nx += dir[i][0];
-			ny += dir[i][1];
+				
+				// 같은 방향으로 이동
+				nx += dir[i][0];
+				ny += dir[i][1];
+			} // while
 		}
 
 		return false;
