@@ -12,10 +12,10 @@ public class Main_1463 {
 		System.out.println(result);
 	}
 
-	// Bottom-up
+	// Top-down
 	public static void check(int level, int cur) {
 		if (level >= result)
-			return; // °¡ÁöÄ¡±â
+			return; // Â°Â¡ÃÃ¶Ã„Â¡Â±Ã¢
 
 		if (cur == 1) {
 			if (level < result)
