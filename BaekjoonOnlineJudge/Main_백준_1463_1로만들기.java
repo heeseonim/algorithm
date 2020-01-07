@@ -15,7 +15,7 @@ public class Main_1463 {
 	// Top-down
 	public static void check(int level, int cur) {
 		if (level >= result)
-			return; // Â°Â¡ÃÃ¶Ã„Â¡Â±Ã¢
+			return; // °¡ÁöÄ¡±â
 
 		if (cur == 1) {
 			if (level < result)
