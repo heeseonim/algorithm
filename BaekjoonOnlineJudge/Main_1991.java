@@ -11,7 +11,7 @@ public class Main_1991 {
 		tree = new char[(int) Math.pow(2, N)];
 		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 
-		hm.put('A', 1);
+		hm.put('A', 1); // 'A'를 루트 노드로 지정
 		tree[1] = 'A';
 
 		for (int i = 0; i < N; i++) {
@@ -20,7 +20,7 @@ public class Main_1991 {
 			char left = s.charAt(2);
 			char right = s.charAt(4);
 
-			int position = hm.get(root);
+			int position = hm.get(root); // 루트의 위치를 불러옴
 
 			if (left != '.') {
 				tree[position * 2] = left;
@@ -40,15 +40,15 @@ public class Main_1991 {
 		postorder(1);
 	}
 
-	public static void preorder(int index) {
-		System.out.print(tree[index]);
-		if (index * 2 < tree.length && tree[index * 2] != 0)
+	public static void preorder(int index) { // 전위순회 루트-left-right
+		System.out.print(tree[index]); // 현재 조회하고 있는 노드를 출력
+		if (index * 2 < tree.length && tree[index * 2] != 0) // 0이 아니라면
 			preorder(index * 2);
 		if (index * 2 + 1 < tree.length && tree[index * 2 + 1] != 0)
 			preorder(index * 2 + 1);
 	}
 
-	public static void inorder(int index) {
+	public static void inorder(int index) { // 중위순회 left-루트-right
 		if (index * 2 < tree.length && tree[index * 2] != 0)
 			inorder(index * 2);
 		System.out.print(tree[index]);
@@ -56,7 +56,7 @@ public class Main_1991 {
 			inorder(index * 2 + 1);
 	}
 
-	public static void postorder(int index) {
+	public static void postorder(int index) { // 후위순회 left-right-루트
 		if (index * 2 < tree.length && tree[index * 2] != 0)
 			postorder(index * 2);
 		if (index * 2 + 1 < tree.length && tree[index * 2 + 1] != 0)
