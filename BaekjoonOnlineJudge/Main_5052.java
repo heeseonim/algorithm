@@ -13,13 +13,14 @@ public class Main_5052 {
 				arr[i] = br.readLine();
 			}
 			
-			Arrays.sort(arr);
+			Arrays.sort(arr); // 알파벳순 & 길이 정렬
+			
 			boolean check = false;
 			for (int i = 1; i < arr.length; i++) {
-				check = arr[i].startsWith(arr[i-1]);
-				if(check) break;
+				check = arr[i].startsWith(arr[i-1]); // 이전 문장과 비교
+				if(check) break; // 이전 문장이 접두사로 시작한다면 break
 			}
-			System.out.println(check ? "NO" : "YES");
+			System.out.println(check ? "NO" : "YES"); // true 이면 NO 출력
 		}
 	}
 }
