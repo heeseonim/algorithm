@@ -13,7 +13,7 @@ public class Main_5052 {
 				arr[i] = br.readLine();
 			}
 			
-			Arrays.sort(arr); // 알파벳순 & 길이 정렬
+			Arrays.sort(arr); // 정렬
 			
 			boolean check = false;
 			for (int i = 1; i < arr.length; i++) {
