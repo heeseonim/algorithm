@@ -6,11 +6,11 @@ import java.util.HashSet;
 
 public class Main_9202 {
 
-	static final int SIZE = 26;
+	static final int SIZE = 26; // 알파벳 대문자만 들어오므로 26개
 
 	static class Node {
 		Node[] child;
-		boolean isTerminal;
+		boolean isTerminal; // 단어가 끝났는지 표시
 
 		Node() {
 			isTerminal = false;
@@ -38,12 +38,12 @@ public class Main_9202 {
 				current = current.child[next];
 			}
 
-			current.isTerminal = true;
+			current.isTerminal = true; // 삽입이 종료되면 끝을 표시해줌
 		}
 
 		// 해당 문자열이 단어사전에 있는지 확인하는 함수
 		boolean check(String key) {
-			Node current = root;
+			Node current = root; // 루트에서 탐색 시작
 
 			for (int i = 0; i < key.length(); i++) {
 				int next = key.charAt(i) - 'A';
@@ -77,9 +77,10 @@ public class Main_9202 {
 		br.readLine(); // 한 줄 입력 처리
 
 		N = Integer.parseInt(br.readLine());
-		StringBuilder result = new StringBuilder();
+		StringBuilder result = new StringBuilder(); // 결과값을 담을 stringbuilder
 
 		for (int k = 0; k < N; k++) {
+			// 모두 재사용
 			cube = new char[4][4];
 			visit = new boolean[4][4];
 			hs = new HashSet<String>();
@@ -91,6 +92,7 @@ public class Main_9202 {
 				}
 			}
 
+			// 작은 길이부터 체크
 			size = 1;
 			while (size <= 8) {
 				arr = new char[size];
@@ -103,6 +105,7 @@ public class Main_9202 {
 						visit[i][j] = false;
 					}
 				}
+				
 				size++;
 			}
 
@@ -129,13 +132,13 @@ public class Main_9202 {
 	static void dfs(int r, int c, int depth) {
 		if (depth == size) {
 			String s = String.copyValueOf(arr);
-			if (trie.check(s) && !hs.contains(s)) {
+			if (trie.check(s) && !hs.contains(s)) { // 단어가 트라이 안에 존재하고, set에 들어있지 않을 때
 				hs.add(s);
 			}
 			return;
 		}
 
-		for (int i = 0; i < 8; i++) {
+		for (int i = 0; i < 8; i++) { // 가로, 세로, 대각선 탐색
 			int nr = r + dir[i][0];
 			int nc = c + dir[i][1];
 
