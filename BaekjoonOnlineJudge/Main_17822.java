@@ -1,8 +1,9 @@
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_17822 {
+public class 원판돌리기 {
 	public static int N, M, T, total;
 	public static int[] front;
 	public static int[][] circle;
@@ -44,7 +45,7 @@ public class Main_17822 {
 
 		int newCount = count;
 
-		if (dir == 1)
+		if (dir == 0)
 			newCount = -count;
 
 		// 회전
@@ -69,8 +70,6 @@ public class Main_17822 {
 				if (f >= M)
 					f -= M;
 
-				System.out.print(circle[i][f]);
-				
 				int cur = circle[i][f];
 
 				int left = f - 1;
@@ -88,36 +87,36 @@ public class Main_17822 {
 
 				f++; // 오른쪽으로 이동
 			}
-			System.out.println();
 		}
-		System.out.println();
 
-		// 아래 같은 값 체크
-		for (int i = 0; i < N - 1; i++) {
-			int f = front[i]; // i 원판의 front 위치
-			int df = front[i + 1]; // 아래 원판의 front 위치
+		if (M != 1) {
+			// 아래 같은 값 체크
+			for (int i = 0; i < N - 1; i++) {
+				int f = front[i]; // i 원판의 front 위치
+				int df = front[i + 1]; // 아래 원판의 front 위치
 
-			while (true) {
-				// front 쭉 돌면서 체크
-				if (circle[i][f] != 0 && (circle[i][f] == circle[i + 1][df])) {
-					visited[i][f] = true;
-					visited[i + 1][df] = true;
+				while (true) {
+					// front 쭉 돌면서 체크
+					if (circle[i][f] != 0 && (circle[i][f] == circle[i + 1][df])) {
+						visited[i][f] = true;
+						visited[i + 1][df] = true;
+					}
+
+					f++;
+					df++;
+
+					if (f < 0)
+						f += M;
+					if (f >= M)
+						f -= M;
+					if (df < 0)
+						df += M;
+					if (df >= M)
+						df -= M;
+
+					if (f == front[i])
+						break;
 				}
-
-				f++;
-				df++;
-
-				if (f < 0)
-					f += M;
-				if (f >= M)
-					f -= M;
-				if (df < 0)
-					df += M;
-				if (df >= M)
-					df -= M;
-
-				if (f == front[i])
-					break;
 			}
 		}
 
@@ -129,44 +128,35 @@ public class Main_17822 {
 		boolean flag = false; // 한 턴의 flag를 체크할 변수
 
 		for (int i = 0; i < N; i++)
-			for (int j = 0; j < M; j++) 
+			for (int j = 0; j < M; j++)
 				if (visited[i][j]) {
 					circle[i][j] = 0;
 					flag = true;
 				}
 
 		if (!flag) {
-			int sum = 0;
+			double sum = 0;
 			int count = 0;
-			
+
 			for (int i = 0; i < N; i++)
-				for (int j = 0; j < M; j++) 
+				for (int j = 0; j < M; j++)
 					if (circle[i][j] > 0) {
 						sum += circle[i][j];
 						count++;
-					}			
+					}
 
-			float avg = (float) (sum / count);
+			double avg = sum / count;
 
 			for (int i = 0; i < N; i++)
 				for (int j = 0; j < M; j++) {
 					if (circle[i][j] == 0)
 						continue;
-					
+
 					if (circle[i][j] > avg)
 						circle[i][j]--;
-					else
+					else if (circle[i][j] < avg)
 						circle[i][j]++;
 				}
 		}
-
-//		for (int[] a : circle) {
-//			for (int b : a) {
-//				System.out.print(b);
-//			}
-//			System.out.println();
-//		}
-//		System.out.println();
-
 	}
 }
