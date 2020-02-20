@@ -21,6 +21,6 @@ Question name / Using Algorithm
 * [programmers](https://programmers.co.kr/)
 * [SW Expert Academy](https://swexpertacademy.com/main/main.do)
 
-## :smiling_face_with_three_hearts: Authors
+## :sunglasses: Authors
 
 * **Im Hee-seon** - [heeseonim](https://github.com/heeseonim)
