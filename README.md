@@ -1,6 +1,6 @@
-# Project Title
+# Study Algorithm
 
-One Paragraph of project description goes here
+알고리즘 문제를 풀어보고 코드를 기록하는 공간입니다. :woman_technologist:
 
 ## Getting Started
 
