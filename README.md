@@ -2,7 +2,7 @@
 
 알고리즘 문제를 풀어보고 코드를 기록하는 공간입니다.
 
-### :speech_balloon: Commit message
+### :speech_balloon: Commit Message
 
 각 Code의 Commit message 에는 문제의 이름과 사용한 알고리즘을 표시하고 있습니다.
 
