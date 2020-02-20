@@ -10,7 +10,7 @@
 Question name / Using Algorithm
 ```
 
-### :keyboard: coding style
+### :keyboard: Coding Style
 
 주로 Java 를 이용하여 Code를 작성하고 있습니다.
 
