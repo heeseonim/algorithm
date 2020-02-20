@@ -23,4 +23,4 @@ Question name / Using Algorithm
 
 ## Authors
 
-* **Im Hee-seon** - *Initial work* - [heeseonim](https://github.com/heeseonim)
+* **Im Hee-seon** - [heeseonim](https://github.com/heeseonim)
