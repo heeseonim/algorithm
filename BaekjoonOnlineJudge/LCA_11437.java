@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class LCA_11437 {
+public class LCA2_11438 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -24,34 +24,24 @@ public class LCA_11437 {
 			list[y].add(x);
 		}
 
-		int MAX = 20;
-		int[][] parent = new int[N + 1][MAX];
+		int[] parent = new int[N + 1];
 		int[] depth = new int[N + 1];
 
 		Queue<Integer> queue = new LinkedList<Integer>();
 		int START = 1;
 		queue.add(START);
-		parent[START][0] = START;
+		parent[START] = START;
 		depth[START] = START;
 
 		while (!queue.isEmpty()) {
 			int from = queue.poll();
 
 			// from 노드에 연결된 노드들 확인
-			for (int to : list[from]) {				
-				if (parent[to][0] == 0) { // 부모정보가 없다면 부모정보, 깊이정보 입력
-					parent[to][0] = from;
+			for (int to : list[from]) {
+				if (parent[to] == 0) { // 부모정보가 없다면 부모정보, 깊이정보 입력
+					parent[to] = from;
 					depth[to] = depth[from] + 1;
 					queue.add(to); // 해당 지점 큐에 삽입하여 연이어 탐색
-				}
-			}
-		}
-
-		// parent 배열 채우기
-		for (int j = 0; j < MAX-1; j++) {
-			for (int i = 1; i <= N; i++) {
-				if (parent[i][j] != 0) {
-					parent[i][j + 1] = parent[parent[i][j]][j];
 				}
 			}
 		}
@@ -69,26 +59,19 @@ public class LCA_11437 {
 				y = temp;
 			}
 
-			int diff = depth[y] - depth[x]; // 높이 차이 계산
-			int k = 0;
-			while(diff > 0) { // 깊이차를 없애며 y를 이동
-				if (diff % 2 == 1)
-					y = parent[y][k];
-				diff /= 2;
-				k++;
+			while (depth[x] != depth[y]) { // 깊이가 다르다면, 깊이를 맞춰줌
+				y = parent[y];
 			}
 
 			if (x == y) { // 같아졌다면, 공통 조상 발견
 				System.out.println(x);
 			} else { // 다르다면, 같을 때까지 부모 찾기
-				for (int j = MAX-1; j >= 0; j--) {
-					if (parent[x][j] != parent[y][j]) {
-						x = parent[x][j];
-						y = parent[y][j];
-					}
+				while (parent[x] != parent[y]) {
+					x = parent[x];
+					y = parent[y];
 				}
-				
-				System.out.println(parent[x][0]);
+
+				System.out.println(parent[x]);
 			}
 		}
 	}
