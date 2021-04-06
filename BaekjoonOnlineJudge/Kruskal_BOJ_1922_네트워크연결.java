@@ -33,7 +33,7 @@ public class Main_백준_1922_네트워크연결 {
 			int px = findSet(e.a); // 대표자를 찾음
 			int py = findSet(e.b);
 			if (px != py) { // 사이클이 생기면 안됨
-				union(px, py); // 해당 정점 연결
+				link(px, py); // 해당 정점 연결
 				mst += e.val; // 가중치 더해주기
 				cnt++; // 연결된 간선 수
 				if (cnt == V - 1) {
@@ -74,14 +74,6 @@ public class Main_백준_1922_네트워크연결 {
 		} else {
 			p[x] = findSet(p[x]);
 			return p[x];
-		}
-	}
-
-	public static void union(int x, int y) {
-		int px = findSet(x);
-		int py = findSet(y);
-		if (px != py) { // 서로 다른 집합일 때 합치기
-			link(px, py);
 		}
 	}
 
