@@ -19,7 +19,7 @@ public class Kruskal_BFS_BOJ_1944_복제로봇_1 {
 
 		map = new int[N][N];
 		island = new Point[M + 3]; // 2~M+1 까지 각 위치의 좌표를 저장
-		int temp = 2;
+		int temp = 2; // 벽이 1이므로 2부터 숫자 붙여주기
 
 		for (int i = 0; i < N; i++) {
 			String s = br.readLine();
@@ -37,9 +37,10 @@ public class Kruskal_BFS_BOJ_1944_복제로봇_1 {
 		G = new ArrayList<>();
 		p = new int[temp];
 		rank = new int[temp];
-		init();
+		init(); // init 잊지말기..
 		makeG();
 
+		// kruskal
 		Collections.sort(G);
 		int answer = 0, cnt = 0;
 		for (int i = 0; i < G.size(); i++) {
@@ -50,12 +51,12 @@ public class Kruskal_BFS_BOJ_1944_복제로봇_1 {
 				link(px, py);
 				answer += e.val;
 				cnt++;
-				if (cnt == M)
+				if (cnt == M) // M = 위치의 수 - 1
 					break;
 			}
 		}
 		
-		System.out.println(cnt == M ? answer : -1);
+		System.out.println(cnt == M ? answer : -1); // 간선 수를 충족하지 못했다면 -1 출력
 	}
 
 	public static void init() {
@@ -103,12 +104,12 @@ public class Kruskal_BFS_BOJ_1944_복제로봇_1 {
 
 					visited[nx][ny] = true;
 
-					if (map[nx][ny] > 1) {
+					if (map[nx][ny] > 1) { // S 혹은 K 발견
 						G.add(new Edge(i, map[nx][ny], cur.dist + 1));
 						continue;
 					}
 
-					queue.add(new Point(nx, ny, cur.dist + 1));
+					queue.add(new Point(nx, ny, cur.dist + 1)); // 계속 탐색
 				}
 			}
 		}
