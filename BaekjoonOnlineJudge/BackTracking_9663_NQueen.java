@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class DFS_9663_NQueen {
+public class BackTracking_9663_NQueen {
 	public static int N, answer;
 	public static int[] arr;
 
