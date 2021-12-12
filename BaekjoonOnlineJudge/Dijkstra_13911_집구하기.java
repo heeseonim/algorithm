@@ -1,9 +1,9 @@
 import java.io.*;
 import java.util.*;
 
-// 1. 가상노드로 맥도날드, 스타벅스와의 거리 계산
+// 1. 가상노드로 맥도날드, 스타벅스와의 거리 계산 (다익스트라)
 // 2. sum 배열에 합한 값 넣어주기
-// 3. 
+// 3. 조건 확인하면서 최솟값 계산해주기
 public class Main {
 	public static List<Point>[] m_adjList; // 맥세권 연결관계 리스트
 	public static long[] m_dist; // 맥세권 거리값 배열
